@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABD — платформа быстрой разработки учётных приложений</title>
+  <meta name="description" content="ABD — платформа быстрой разработки учётных приложений. Конфигурация — дерево файлов Lua-DSL, нативный клиент, сервер с резервным узлом.">
+  <link rel="icon" type="image/png" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="../assets/logo-128.png" alt="" width="34" height="34">ABD</a>
+    <nav class="nav" aria-label="Разделы сайта">
+      <a href="./" aria-current="page">О платформе</a>
+      <a href="quickstart/">Быстрый старт</a>
+      <a href="download/">Загрузки</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Учётные приложения — быстро, как в 1С 7.7 и Access</h1>
+      <p class="lead">ABD — платформа быстрой разработки учётных приложений. Конфигурация — это дерево текстовых файлов на Lua-DSL: его удобно читать, хранить в Git и писать вместе с ИИ.</p>
+      <div class="actions">
+        <a class="button" href="download/">Скачать</a>
+        <a class="button secondary" href="quickstart/">Быстрый старт</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Как устроена конфигурация</h2>
+      <p class="section-lead">Конфигурация — папка с текстовыми файлами. У каждого вида файлов своя роль.</p>
+      <div class="grid">
+        <div class="card">
+          <span class="tag">.aform</span>
+          <h3>Класс и форма в одном файле</h3>
+          <p>Описание данных и экранная форма для них находятся рядом, в одном файле.</p>
+        </div>
+        <div class="card">
+          <span class="tag">.lua</span>
+          <h3>Поведение формы</h3>
+          <p>Логика формы пишется на Lua в отдельном файле.</p>
+        </div>
+        <div class="card">
+          <span class="tag">роботы</span>
+          <h3>Проведение документов</h3>
+          <p>Роботы выполняют проведение документов.</p>
+        </div>
+      </div>
+      <p class="todo">пример кода — короткий файл <code>.aform</code> и парный <code>.lua</code>, которые можно показать на главной.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Из чего состоит платформа</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Инструмент автора <code>abd</code></h3>
+          <p>Программа, с которой работает автор конфигурации.</p>
+        </div>
+        <div class="card">
+          <h3>Сервер</h3>
+          <p>Один пишущий узел и резервный узел.</p>
+        </div>
+        <div class="card">
+          <h3>Нативный клиент</h3>
+          <p>Пользователи работают в нативном клиентском приложении.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Для кого</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Внедренцы</h3>
+          <p>Достаточно уровня JavaScript, чтобы писать конфигурации.</p>
+        </div>
+        <div class="card">
+          <h3>Программисты 1С</h3>
+          <p>Подход в духе 1С 7.7: формы, документы и их проведение.</p>
+        </div>
+        <div class="card">
+          <h3>Работа с ИИ</h3>
+          <p>Конфигурации можно писать с помощью ИИ-навыков.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Что открыто, а что нет</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Конфигурации — открытый код</h3>
+          <p>Конфигурации лежат в отдельных публичных репозиториях. Примеры конфигураций готовятся, среди них — бухгалтерия, вырастающая в АБС банка.</p>
+        </div>
+        <div class="card">
+          <h3>Платформа — готовые сборки</h3>
+          <p>Код платформы закрыт. Инструмент автора <code>abd</code> и сервер распространяются в виде готовых сборок на <a href="download/">странице загрузок</a>.</p>
+        </div>
+      </div>
+      <p class="todo">условия использования сборок (лицензия, платно или бесплатно).</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Wildware Ltd</span>
+    <span>ABD создан компанией <a href="https://wildware.org">Wildware Ltd</a></span>
+  </div>
+</footer>
+</body>
+</html>
